@@ -14,7 +14,10 @@
 
 <!--列表-->
 <view class="content-bg">
-  <scroll-view scroll-y="true">
+<pulltorefresh-view nomore="{{nomore}}" refreshing="{{refreshing}}" bindpulldownrefresh="refreshData" bindloadmore="loadmoreData">
+
+  
+
     <block wx:for="{{items}}" wx:key='k'>
 
       <!--item-->
@@ -32,6 +35,7 @@
 
       </view>
     </block>
-  </scroll-view>
+
+  </pulltorefresh-view>
 
 </view>

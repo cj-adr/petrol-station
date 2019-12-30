@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
-  "navigationBarTitleText":"会员列表"
+  "navigationBarTitleText":"会员列表",
+  "usingComponents": {
+    "pulltorefresh-view": "../../components/wx-pulltorefresh-view/wx-pulltorefresh-view"
+  }
 }

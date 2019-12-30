@@ -1,4 +1,67 @@
 // pages/member/list/member_list.js
+
+let _items = [{
+    'avatar': 'https://www.baidu.com',
+    'name': 'test',
+    'phone': '130 0000 1234'
+  },
+  {
+    'avatar': 'https://www.baidu.com',
+    'name': 'test',
+    'phone': '130 0000 1234'
+  },
+  {
+    'avatar': 'https://www.baidu.com',
+    'name': 'test',
+    'phone': '130 0000 1234'
+  },
+  {
+    'avatar': 'https://www.baidu.com',
+    'name': 'test',
+    'phone': '130 0000 1234'
+  },
+  {
+    'avatar': 'https://www.baidu.com',
+    'name': 'test',
+    'phone': '130 0000 1234'
+  },
+  {
+    'avatar': 'https://www.baidu.com',
+    'name': 'test',
+    'phone': '130 0000 1234'
+  },
+  {
+    'avatar': 'https://www.baidu.com',
+    'name': 'test',
+    'phone': '130 0000 1234'
+  },
+  {
+    'avatar': 'https://www.baidu.com',
+    'name': 'test',
+    'phone': '130 0000 1234'
+  },
+  {
+    'avatar': 'https://www.baidu.com',
+    'name': 'test',
+    'phone': '130 0000 1234'
+  },
+  {
+    'avatar': 'https://www.baidu.com',
+    'name': 'test',
+    'phone': '130 0000 1234'
+  },
+  {
+    'avatar': 'https://www.baidu.com',
+    'name': 'test',
+    'phone': '130 0000 1234'
+  },
+  {
+    'avatar': 'https://www.baidu.com',
+    'name': 'test',
+    'phone': '130 0000 1234'
+  }
+];
+
 Page({
 
   /**
@@ -11,67 +74,9 @@ Page({
     imgAvatar: '../../../assets/images/common_avatar.png',
     memberDesc: '共100条会员数据',
     searchValue: '',
-    items: [{
-        'avatar': 'https://www.baidu.com',
-        'name': 'test',
-        'phone': '130 0000 1234'
-      },
-      {
-        'avatar': 'https://www.baidu.com',
-        'name': 'test',
-        'phone': '130 0000 1234'
-      },
-      {
-        'avatar': 'https://www.baidu.com',
-        'name': 'test',
-        'phone': '130 0000 1234'
-      },
-      {
-        'avatar': 'https://www.baidu.com',
-        'name': 'test',
-        'phone': '130 0000 1234'
-      },
-      {
-        'avatar': 'https://www.baidu.com',
-        'name': 'test',
-        'phone': '130 0000 1234'
-      },
-      {
-        'avatar': 'https://www.baidu.com',
-        'name': 'test',
-        'phone': '130 0000 1234'
-      },
-      {
-        'avatar': 'https://www.baidu.com',
-        'name': 'test',
-        'phone': '130 0000 1234'
-      },
-      {
-        'avatar': 'https://www.baidu.com',
-        'name': 'test',
-        'phone': '130 0000 1234'
-      },
-      {
-        'avatar': 'https://www.baidu.com',
-        'name': 'test',
-        'phone': '130 0000 1234'
-      },
-      {
-        'avatar': 'https://www.baidu.com',
-        'name': 'test',
-        'phone': '130 0000 1234'
-      },
-      {
-        'avatar': 'https://www.baidu.com',
-        'name': 'test',
-        'phone': '130 0000 1234'
-      },
-      {
-        'avatar': 'https://www.baidu.com',
-        'name': 'test',
-        'phone': '130 0000 1234'
-      }
-    ],
+    refreshing: false,
+    nomore: false,
+    items: _items,
   },
 
   /**
@@ -93,10 +98,42 @@ Page({
     });
   },
 
-  onClearClick:function(e){
+  onClearClick: function(e) {
     this.setData({
       searchValue: ''
     });
+  },
+
+  refreshData: function() {
+    this.setData({
+      refreshing: true,
+    })
+    setTimeout(() => {
+      this.setData({
+        items: _items,
+        refreshing: false,
+        nomore: false,
+      });
+    }, 2000);
+  },
+  loadmoreData: function() {
+    this.setData({
+      refreshing: true,
+    })
+    setTimeout(() => {
+      if (this.data.items.length > 15) {
+        this.setData({
+          nomore: true,
+        })
+      } else {
+        this.setData({
+          items: [...this.data.items, ..._items],
+        });
+      }
+      this.setData({
+        refreshing: false,
+      })
+    }, 2000);
   },
 
   /**
