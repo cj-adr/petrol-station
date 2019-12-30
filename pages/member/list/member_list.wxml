@@ -1,0 +1,37 @@
+<!--pages/member/list/member_list.wxml-->
+
+<view class="input-bg">
+  <view>
+    <image class='icon_search' src='{{imgSearch}}' />
+    <input value='{{searchValue}}' placeholder="请输入会员手机号" bindinput="onInputChange"/>
+    <image class='icon_clear' hidden="{{searchValue == ''}}" src='{{imgClear}}' bindtap="onClearClick"/>
+  </view>
+</view>
+
+<view class="total-bg">
+  <text>{{memberDesc}}</text>
+</view>
+
+<!--列表-->
+<view class="content-bg">
+  <scroll-view scroll-y="true">
+    <block wx:for="{{items}}" wx:key='k'>
+
+      <!--item-->
+      <view class='item' hover-class='item-hover' bindtap="onItemClick" data-item="{{item}}">
+
+        <image class="avatar" src="{{imgAvatar}}" />
+
+        <view class='content'>
+          <text class='name'>{{item.name}}</text>
+
+          <text class='phone'>{{item.phone}}</text>
+        </view>
+
+        <image class="icon_arrow" src="{{imgArrow}}" />
+
+      </view>
+    </block>
+  </scroll-view>
+
+</view>
