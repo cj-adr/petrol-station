@@ -1,0 +1,67 @@
+.record-time {
+  margin-top: 32rpx;
+  display: flex;
+  flex-direction: column;
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+}
+
+.record-time-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.record-sum {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.record-sum-item {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  align-items: center;
+}
+
+.record-detail-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.record-detail-list {
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.record-detail-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.record-detail-text-left {
+  flex: 1;
+  text-align:left;
+}
+
+.record-detail-text-mid {
+  flex: 1;
+  text-align:center;
+}
+
+.record-detail-text-right {
+  flex: 1;
+  text-align:right;
+}
+
+.submit-btn {
+  width: 100%;
+  border-radius: 8rpx;
+  background-color: blue;
+  color: white;
+  text-align: center;
+}

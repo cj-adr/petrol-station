@@ -1,0 +1,22 @@
+<!--pages/record/list/record-list.wxml-->
+
+<scroll-view>
+
+  <view>
+    <text>11</text>
+    <text>12</text>
+  </view>
+  <view>
+    <text>21</text>
+    <text>22</text>
+    <text>23</text>
+    <text>24</text>
+    <text>25</text>
+    <text>26</text>
+    <text>27</text>
+  </view>
+  <view>
+    <text>3</text>
+  </view>
+
+</scroll-view>
