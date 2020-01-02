@@ -1,0 +1,112 @@
+/* pages/member/list/member_list.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-bg {
+  background-color: #fff;
+  position: relative;
+  height: 60px;
+  z-index: 2;
+}
+
+.input-bg view {
+  margin: 8px;
+  height: 44px;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  display: flex;
+}
+
+.icon_search {
+  width: 20px;
+  height: 20px;
+  margin-left: 19px;
+  margin-top: 12px;
+  display: inline-flex;
+}
+
+.icon_clear {
+  width: 28px;
+  height: 28px;
+  margin-right: 19px;
+  margin-top: 8px;
+  display: inline-flex;
+}
+
+.input-bg input {
+  margin-left: 12px;
+  height: 44px;
+  color: #333;
+  font-size: 16px;
+  flex: 1;
+}
+
+.total-bg {
+  height: 30px;
+  background-color: #e7f3ff;
+  text-align: center;
+  line-height: 30px;
+  z-index: 2;
+}
+
+.total-bg text {
+  color: #1890ff;
+  font-size: 13px;
+}
+
+.content-bg {
+  background-color: #f4f4f4;
+  flex: 1;
+  height: 100px;
+}
+
+.content-bg pulltorefresh-view {
+  width: 100%;
+  height: 100% ;
+}
+
+.item {
+  display: flex;
+  height: 36px;
+  padding: 12px 20px 12px 20px;
+  margin-bottom: 1px;
+  background-color: #fff;
+}
+
+.item-hover {
+  background-color: #fcfcfc;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+}
+
+.content {
+  flex: 1;
+  margin-left: 14px;
+}
+
+.name {
+  color: #333;
+  font-size: 14px;
+  display: block;
+}
+
+.phone {
+  color: #808080;
+  font-size: 11px;
+}
+
+.icon_arrow {
+  width: 7px;
+  height: 12px;
+  margin-top: 12px;
+  display: inline-flex;
+}

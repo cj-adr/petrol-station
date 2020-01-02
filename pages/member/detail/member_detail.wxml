@@ -1,0 +1,138 @@
+<!--pages/member/detail/member_detail.wxml-->
+<view class="header">
+
+  <view class="info-content">
+    <image src="{{imgAvatar}}" />
+    <view>
+      <view class="title">
+        <text>会员昵称</text>
+        <view class="line-white"></view>
+        <view class="vip">
+          <text class="glod_vip">黄金会员</text>
+          <image src="{{imgMemberVip}}" />
+        </view>
+      </view>
+
+      <view class="phone">手机号：159 2319 2345</view>
+    </view>
+  </view>
+
+  <image src="{{imgMember}}" />
+</view>
+
+<view class="center-bg">
+
+  <view class="center-item">
+    <image src="{{imgDiscount}}" />
+    <view>
+      加油
+      <text>9.6</text> 折
+    </view>
+  </view>
+
+  <view class="line_gray" />
+
+  <view class="center-item">
+    <image src="{{imgScore}}" />
+    <view>
+      积分
+      <text>2</text>倍
+    </view>
+
+  </view>
+</view>
+
+<view class="bottom-bg">
+
+  <view class="tabs">
+
+    <view class="tab {{current == '0' ? 'tab-hover2' : ''}}" hover-class='tab-hover' bindtap="onTabClick" data-index='0'>
+      <text>账户</text>
+    </view>
+
+    <view class="emptyDis" />
+
+    <view class="tab {{current == '1' ? 'tab-hover2' : ''}}" hover-class='tab-hover' bindtap="onTabClick" data-index='1'>
+      <text>资料</text>
+    </view>
+  </view>
+
+  <swiper current="{{current}}" duration="200" bindchange="onPageChange">
+
+    <swiper-item>
+      <view>
+        <view class="card-bg">
+          <block wx:for="{{cardItems}}" wx:key='k'>
+            <view class='card-item' hover-class='card-hover' data-item="{{item}}">
+
+              <image src="{{item.icon}}" />
+
+              <view class='card-attr'>
+                <text class='card-name'>{{item.name}}</text>
+                <text class='card-value'>{{item.value}}</text>
+              </view>
+
+            </view>
+          </block>
+        </view>
+
+        <view class="recharge" hover-class="recharge-hover">充值</view>
+      </view>
+    </swiper-item>
+
+    <swiper-item>
+      <view>
+
+        <view class="info-item">
+          <image class='info-icon' src="../../../assets/images/member_nick.png" />
+          <text class="info-label">昵称</text>
+
+          <text class="info-value">昵称</text>
+        </view>
+
+        <view class="split-line" />
+
+        <view class="info-item">
+          <image class='info-icon' src="../../../assets/images/member_sex.png" />
+          <text class="info-label">性别</text>
+
+          <text class="info-value">男</text>
+        </view>
+
+        <view class="split-line" />
+
+        <view class="info-item">
+          <image class='info-icon' src="../../../assets/images/member_birthday.png" />
+          <text class="info-label">生日</text>
+
+          <text class="info-value">2018.08.09</text>
+        </view>
+
+        <view class="split-line" />
+
+        <view class="info-item">
+          <image class='info-icon' src="../../../assets/images/member_lock.png" />
+          <text class="info-label">免密支付</text>
+
+          <image class="info-value switch-bar" src="{{pwdLock ? imgSelect : imgUnSelect}}" bindtap="onPwdLockClick" />
+        </view>
+
+        <view class="split-line" />
+
+        <view class="info-item">
+          <image class='info-icon' src="../../../assets/images/member_lock_level.png" />
+          <text class="info-label">锁定等级</text>
+
+          <image class='info-ask' src='../../../assets/images/member_ask.png' bindtap="onAskClick" />
+
+          <image class="info-value switch-bar" src="{{levelLock ? imgSelect : imgUnSelect}}" bindtap="onLevelLockClick" />
+        </view>
+
+        <view class='edit-bg' hover-class="edit-bg-hover">编辑</view>
+
+      </view>
+    </swiper-item>
+
+  </swiper>
+
+</view>
