@@ -1,6 +1,6 @@
 <view>
-  <view class='top'>
-    <scroll-view class='scroll-root' scroll-y="true">
+  <view class='top' >
+    <scroll-view class='scroll' scroll-y="true">
       <view class='record-time'>
         <view class='record-time-item'>
           <text class='record-time-left'>上次交班时间</text>
