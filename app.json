@@ -5,7 +5,9 @@
     "pages/member/list/member_list",
     "pages/member/detail/member_detail",
     "pages/index/index",
-    "pages/logs/logs" 
+    "pages/logs/logs",
+    "pages/order/list/order-list",
+    "pages/order/detail/order-detail"
   ],
   "window": {
     "backgroundTextStyle": "light",
