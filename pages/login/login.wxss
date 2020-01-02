@@ -1,0 +1,188 @@
+
+.container{
+  width: 100%;
+  position: relative;
+  padding: 0;
+}
+
+.logo-container{
+  margin-top: 30rpx;
+}
+
+
+
+.input-container{
+  position: absolute;
+  left: 30rpx;
+  top: 330rpx;
+}
+
+.input-mobile-container{
+  width: 700rpx;
+  height: 70rpx;
+  display: block;
+  box-sizing: border-box;
+}
+
+.input-mobile-container input{
+  display: block;
+  box-sizing: border-box;
+  margin-left: 120rpx;
+  width: 500rpx;
+  height: auto;
+  padding-left: 32rpx; 
+  font-size: medium;
+}
+
+.input-mobile-container image{
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  left: 60rpx;
+  justify-content: center;
+}
+
+.input-password-and-code-container{
+  width: 700rpx;
+  height: 70rpx;
+  margin-top: 60rpx;
+  display: block;
+  box-sizing: border-box;
+}
+
+.input-password-container{
+  width: 700rpx;
+  height: 70rpx;
+  display: block;
+  box-sizing: border-box;
+}
+
+.input-password-container input{
+  display: block;
+  box-sizing: border-box;
+  margin-left: 120rpx;
+  width: 500rpx;
+  height: auto;
+  padding-left: 32rpx; 
+  font-size: medium;
+}
+
+.input-password-container image{
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  left: 60rpx;
+  justify-content: center;
+}
+
+.input-code-container{
+  width: 700rpx;
+  height: 70rpx;
+  display: block;
+  box-sizing: border-box;
+}
+
+.input-code-container image{
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  left: 60rpx;
+  justify-content: center;
+}
+
+.input-code-container input{
+  display: block;
+  box-sizing: border-box;
+  margin-left: 120rpx;
+  width: 350rpx;
+  height: auto;
+  padding-left: 32rpx; 
+  font-size: medium;
+  padding-right: 10rpx;
+}
+
+.input-code-container.button{
+  height: 70rpx;
+  background-color:#178BFB;
+  border-radius: 3px;
+  color: white;
+  font-size: 25rpx;
+  position: absolute;
+  width: 160rpx;
+  right: 40rpx;
+  bottom: 20rpx;
+  padding-left: 25rpx;
+  padding-top: 20rpx;
+}
+
+.btn-container{
+  top: 640rpx;
+  position: absolute;
+  width: 640rpx;
+}
+
+.btn-container button{
+  width: 650rpx;
+  background-color:#178BFB;
+  border-radius: 5px;
+  color: white;
+  font-size: medium;
+  font-family: sans-serif;
+}
+
+
+
+.check-container{
+  margin-top: 20rpx;
+  top: 760rpx;
+  position: absolute;
+  width: 300rpx;
+  display: block;
+  left: 50rpx;
+  box-sizing: border-box;
+  height: 60rpx;
+}
+
+.check-container image{
+  height: 40rpx;
+  width: 40rpx;
+  position: absolute;
+}
+
+.text-remember-password{
+  margin-left: 65rpx;
+  font-size: 30rpx;
+}
+
+
+.login-way-container{
+  margin-top: 15rpx;
+  top: 760rpx;
+  position: absolute;
+  width: 300rpx;
+  display: flex;
+  right: 20rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  justify-content: center;
+  height: 60rpx;
+}
+
+
+.login-way-container image{
+  height: 50rpx;
+  width: 50rpx;
+  position: absolute;
+  right: 20rpx;
+}
+
+.text-login-way{
+  position: absolute;
+  right: 70rpx;
+  margin-top: 5rpx;
+}
+
+
+
+
+
