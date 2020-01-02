@@ -1,11 +1,9 @@
 {
   "pages": [
     "pages/record/detail/record-detail",
-    "pages/logs/logs",
-    
     "pages/record/list/record-list",
-    "pages/index/index"
-    
+    "pages/index/index",
+    "pages/logs/logs" 
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -13,6 +11,5 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

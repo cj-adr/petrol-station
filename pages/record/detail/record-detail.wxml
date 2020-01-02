@@ -1,3 +1,118 @@
+<view>
+  <view class='top'>
+    <scroll-view class='scroll-root' scroll-y="true">
+      <view class='record-time'>
+        <view class='record-time-item'>
+          <text class='record-time-left'>上次交班时间</text>
+          <text class='record-time-right'> 2019-08-08 09:00:00</text>
+        </view>
+        <view class='record-time-item'>
+          <text class='record-time-left'>本次交班时间</text>
+          <text class='record-time-right'>2019-08-09 09:00:00</text>
+        </view>
+      </view>
+      <view class="divide"></view>
+      <view class='record-sum'>
+        <view class='record-sum-item'>
+          <text class='record-sum-item-title'>订单总额</text>
+          <text class='record-sum-item-content'>¥8188.08</text>
+        </view>
+        <view class='record-sum-item'>
+          <text class='record-sum-item-title'>优惠总额</text>
+          <text class='record-sum-item-content'>¥1800.88</text>
+        </view>
+        <view class='record-sum-item'>
+          <text class='record-sum-item-title'>移动实收</text>
+          <text class='record-sum-item-content'>¥8018.00</text>
+        </view>
+        <view class='record-sum-item'>
+          <text class='record-sum-item-title'>现金实收</text>
+          <text class='record-sum-item-content'>¥8001.88</text>
+        </view>
+        <view class='record-sum-item'>
+          <text class='record-sum-item-title'>充值总额</text>
+          <text class='record-sum-item-content'>¥8188.88</text>
+        </view>
+        <view class='record-sum-item'>
+          <text class='record-sum-item-title'>赠送总额</text>
+          <text class='record-sum-item-content'>¥8888.88</text>
+        </view>
+        <view class='record-sum-item'>
+          <text class='record-sum-item-title'>退款总额</text>
+          <text class='record-sum-item-content'>¥1888.0</text>
+        </view>
+      </view>
 
+      <view class="divide"></view>
+      <view class='record-detail-title'>
+        <text class='record-detail-title-text'>收银总额</text>
+      </view>
+      <view class='record-detail-list-cn'>
+        <text class='record-detail-list-cn-left'>支付方式</text>
+        <text class='record-detail-list-cn-mid'>笔数</text>
+        <text class='record-detail-list-cn-right'>金额</text>
+      </view>
+      <view class='record-detail-list'>
+        <view class='record-detail-item' wx:for="{{bean.orderList}}" wx:for-item="order" wx:key="key">
+          <text class='record-detail-text-left'>{{order.name}}</text>
+          <text class='record-detail-text-mid'>{{order.totalCount}}</text>
+          <text class='record-detail-text-right'>{{order.totalAmount}}</text>
+        </view>
+      </view>
+      <view class='record-detail-title'>
+        <text class='record-detail-title-text'>会员卡消费总额</text>
+      </view>
 
-  <button class="submit-btn">交班并退出</button>
+      <view class='record-detail-list-cn'>
+        <text class='record-detail-list-cn-left'>卡种名称</text>
+        <text class='record-detail-list-cn-mid'>笔数</text>
+        <text class='record-detail-list-cn-right'>金额</text>
+      </view>
+      <view class='record-detail-list'>
+        <view class='record-detail-item' wx:for="{{bean.mbrCardSpec}}" wx:for-item="mbrCard" wx:key="key">
+          <text class='record-detail-text-left'>{{mbrCard.name}}</text>
+          <text class='record-detail-text-mid'>{{mbrCard.totalCount}}</text>
+          <text class='record-detail-text-right'>{{mbrCard.totalAmount}}</text>
+        </view>
+      </view>
+      <view class='record-detail-title'>
+        <text class='record-detail-title-text'>充值总额</text>
+      </view>
+
+      <view class='record-detail-list-cn'>
+        <text class='record-detail-list-cn-left'>充值方式</text>
+        <text class='record-detail-list-cn-mid'>笔数</text>
+        <text class='record-detail-list-cn-right'>金额</text>
+      </view>
+      <view class='record-detail-list'>
+        <view class='record-detail-item' wx:for="{{bean.storeCount}}" wx:for-item="store" wx:key="key">
+          <text class='record-detail-text-left'>{{store.name}}</text>
+          <text class='record-detail-text-mid'>{{store.totalCount}}</text>
+          <text class='record-detail-text-right'>{{store.totalAmount}}</text>
+        </view>
+      </view>
+      <view class='record-detail-title'>
+        <text class='record-detail-title-text'>油品消费统计</text>
+      </view>
+
+      <view class='record-detail-list-cn'>
+        <text class='record-detail-list-cn-left'>油品</text>
+        <text class='record-detail-list-cn-mid'>笔数</text>
+        <text class='record-detail-list-cn-right'>金额</text>
+      </view>
+
+      <view class='record-detail-list'>
+        <view class='record-detail-item' wx:for="{{bean.proSkuCount}}" wx:for-item="proSku" wx:key="key">
+          <text class='record-detail-text-left'>{{proSku.name}}</text>
+          <text class='record-detail-text-mid'>{{proSku.totalCount}}</text>
+          <text class='record-detail-text-right'>{{proSku.totalAmount}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class="bottom">
+    <button class="submit-btn">交班并退出</button>
+  </view>
+
+</view>
