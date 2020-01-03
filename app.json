@@ -1,10 +1,5 @@
 {
   "pages": [
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     "pages/login/login",
     "pages/record/detail/record-detail",
     "pages/record/list/record-list",
@@ -14,53 +9,6 @@
     "pages/order/list/order-list",
     "pages/order/detail/order-detail",
     "pages/logs/logs"
-
-=======
-    "pages/member/list/member_list",
-    "pages/member/detail/member_detail",
-    "pages/order/list/order-list",
-    "pages/order/detail/order-detail",
-=======
-    "pages/member/list/member_list",
-    "pages/member/detail/member_detail",
-    "pages/order/list/order-list",
-    "pages/order/detail/order-detail",
->>>>>>> f_learning
-=======
-    "pages/member/list/member_list",
-    "pages/member/detail/member_detail",
-    "pages/order/list/order-list",
-    "pages/order/detail/order-detail",
->>>>>>> f_learning
-=======
-    "pages/member/list/member_list",
-    "pages/member/detail/member_detail",
-    "pages/order/list/order-list",
-    "pages/order/detail/order-detail",
->>>>>>> f_learning
-=======
-    "pages/member/list/member_list",
-    "pages/member/detail/member_detail",
-    "pages/order/list/order-list",
-    "pages/order/detail/order-detail",
->>>>>>> f_learning
-    "pages/record/detail/record-detail",
-    "pages/record/list/record-list",
-    "pages/index/index",
-    "pages/logs/logs"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> f_learning
-=======
->>>>>>> f_learning
-=======
->>>>>>> f_learning
-=======
->>>>>>> f_learning
-=======
->>>>>>> f_learning
   ],
   "window": {
     "backgroundTextStyle": "light",
