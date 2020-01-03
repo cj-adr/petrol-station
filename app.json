@@ -2,6 +2,10 @@
   "pages": [
     "pages/member/list/member_list",
     "pages/member/detail/member_detail",
+    "pages/order/list/order-list",
+    "pages/order/detail/order-detail",
+    "pages/record/detail/record-detail",
+    "pages/record/list/record-list",
     "pages/index/index",
     "pages/logs/logs"
   ],
@@ -11,6 +15,5 @@
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

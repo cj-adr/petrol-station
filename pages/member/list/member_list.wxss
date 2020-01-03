@@ -14,7 +14,7 @@ page {
   z-index: 2;
 }
 
-.input-bg view {
+.input-inner {
   margin: 8px;
   height: 44px;
   border-radius: 4px;
@@ -22,7 +22,7 @@ page {
   display: flex;
 }
 
-.icon_search {
+.icon-search {
   width: 20px;
   height: 20px;
   margin-left: 19px;
@@ -30,7 +30,7 @@ page {
   display: inline-flex;
 }
 
-.icon_clear {
+.icon-clear {
   width: 28px;
   height: 28px;
   margin-right: 19px;
@@ -38,7 +38,7 @@ page {
   display: inline-flex;
 }
 
-.input-bg input {
+.input-search {
   margin-left: 12px;
   height: 44px;
   color: #333;
@@ -54,7 +54,7 @@ page {
   z-index: 2;
 }
 
-.total-bg text {
+.total-bg >text {
   color: #1890ff;
   font-size: 13px;
 }
@@ -67,7 +67,7 @@ page {
 
 .content-bg pulltorefresh-view {
   width: 100%;
-  height: 100% ;
+  height: 100%;
 }
 
 .item {

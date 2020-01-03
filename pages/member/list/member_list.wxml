@@ -1,39 +1,38 @@
 <!--pages/member/list/member_list.wxml-->
 
 <view class="input-bg">
-  <view>
-    <image class='icon_search' src='{{imgSearch}}' />
-    <input value='{{searchValue}}' placeholder="请输入会员手机号" bindinput="onInputChange"/>
-    <image class='icon_clear' hidden="{{searchValue == ''}}" src='{{imgClear}}' bindtap="onClearClick"/>
+  <view class="input-inner">
+    <image class="icon-search" src="{{imgSearch}}" />
+    <input class="input-search" value="{{searchValue}}" placeholder="请输入会员手机号" bindinput="onInputChange" />
+    <image class="icon-clear" src="{{imgClear}}" hidden="{{searchValue == ''}}" bindtap="onClearClick" />
   </view>
 </view>
 
 <view class="total-bg">
-  <text>{{memberDesc}}</text>
+  <text>{{memberCountDesc}}</text>
 </view>
 
 <!--列表-->
 <view class="content-bg">
-<pulltorefresh-view nomore="{{nomore}}" refreshing="{{refreshing}}" bindpulldownrefresh="refreshData" bindloadmore="loadmoreData">
+  <pulltorefresh-view nomore="{{nomore}}" refreshing="{{refreshing}}" bindpulldownrefresh="refreshData" bindloadmore="loadmoreData">
 
-  
-
-    <block wx:for="{{items}}" wx:key='k'>
+    <block wx:for="{{items}}" wx:key="k">
 
       <!--item-->
-      <view class='item' hover-class='item-hover' bindtap="onItemClick" data-item="{{item}}">
+      <view class="item" hover-class="item-hover" bindtap="onItemClick" data-item="{{item}}">
 
         <image class="avatar" src="{{imgAvatar}}" />
 
-        <view class='content'>
-          <text class='name'>{{item.name}}</text>
+        <view class="content">
+          <text class="name">{{item.name}}</text>
 
-          <text class='phone'>{{item.phone}}</text>
+          <text class="phone">{{item.phone}}</text>
         </view>
 
         <image class="icon_arrow" src="{{imgArrow}}" />
 
       </view>
+
     </block>
 
   </pulltorefresh-view>
