@@ -32,6 +32,24 @@ App({
         }
       }
     })
+    var that = this.globalData
+    let menuButtonObj = wx.getMenuButtonBoundingClientRect()
+    wx.getSystemInfo({
+      success: function(res) {{
+        console.log(res)
+        let statusBarHeight = res.statusBarHeight
+        let navTop = menuButtonObj.top
+        let navHeight = statusBarHeight + menuButtonObj.height + (navTop - statusBarHeight) * 2
+
+        that.navHeight = navHeight
+        that.navTop = navTop
+        that.windowHeight = res.windowHeight
+      }},
+    })
+  },
+  // 获取图片相对路径
+  getImagePath: function(name) {
+    return this.globalData.localImagePath + name
   },
   // 获取图片相对路径
   getImagePath: function(name) {
@@ -40,6 +58,13 @@ App({
   globalData: {
     // 定义本地图片位置
     localImagePath: '/assets/images/',
+<<<<<<< HEAD
     userInfo: null
+=======
+    userInfo: null,
+    navHeight:'',
+    natTop:'',
+    windowHeight:'',
+>>>>>>> f_learning
   }
 })

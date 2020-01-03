@@ -1,0 +1,16 @@
+<view class="navbar" style="height:{{navHeight}}px;background-color:{{bgColor}}">
+
+  <!-- 左上角 返回按钮 和 home按钮 wx:if="{{showNav}}" 是控制左上角按钮的显示隐藏，首页不显示 -->
+  <view class="navbar_left" style="top:{{navTop}}px;" wx:if="{{showNav}}">
+
+    <!-- 控制返回按钮的显示 -->
+    <view bindtap="navBack">
+      <image src="{{imgBack}}" />
+    </view>
+
+  </view>
+
+  <!-- 中间标题 -->
+  <view class="navbar_title" style="top:{{navTop}}px;color:{{textColor}};">{{pageName}}</view>
+
+</view>

@@ -1,6 +1,7 @@
 {
   "pages": [
 <<<<<<< HEAD
+<<<<<<< HEAD
     "pages/login/login",
     "pages/record/detail/record-detail",
     "pages/record/list/record-list",
@@ -16,17 +17,27 @@
     "pages/member/detail/member_detail",
     "pages/order/list/order-list",
     "pages/order/detail/order-detail",
+=======
+    "pages/member/list/member_list",
+    "pages/member/detail/member_detail",
+    "pages/order/list/order-list",
+    "pages/order/detail/order-detail",
+>>>>>>> f_learning
     "pages/record/detail/record-detail",
     "pages/record/list/record-list",
     "pages/index/index",
     "pages/logs/logs"
+<<<<<<< HEAD
+>>>>>>> f_learning
+=======
 >>>>>>> f_learning
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
   },
   "sitemapLocation": "sitemap.json"
 }

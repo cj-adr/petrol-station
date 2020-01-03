@@ -1,44 +1,48 @@
 <!--pages/member/detail/member_detail.wxml-->
-<view class="header">
+<navbar page-name="会员详情" text-color="#FFF" bg-color="#1890ff" />
 
-  <view class="info-content">
-    <image src="{{imgAvatar}}" />
-    <view>
-      <view class="title">
-        <text>会员昵称</text>
-        <view class="line-white"></view>
-        <view class="vip">
-          <text class="glod_vip">黄金会员</text>
-          <image src="{{imgMemberVip}}" />
+<view class="top-bg">
+
+  <view class="header">
+    <view class="info-content">
+      <image src="{{imgAvatar}}" />
+      <view>
+        <view class="title">
+          <text>会员昵称</text>
+          <view class="line-white"></view>
+          <view class="vip">
+            <text class="glod_vip">黄金会员</text>
+            <image src="{{imgMemberVip}}" />
+          </view>
         </view>
+
+        <view class="phone">手机号：159 2319 2345</view>
+      </view>
+    </view>
+
+    <image src="{{imgMember}}" />
+  </view>
+
+  <view class="center-bg">
+
+    <view class="center-item">
+      <image src="{{imgDiscount}}" />
+      <view>
+        加油
+        <text>9.6</text> 折
+      </view>
+    </view>
+
+    <view class="line_gray" />
+
+    <view class="center-item">
+      <image src="{{imgScore}}" />
+      <view>
+        积分
+        <text>2</text>倍
       </view>
 
-      <view class="phone">手机号：159 2319 2345</view>
     </view>
-  </view>
-
-  <image src="{{imgMember}}" />
-</view>
-
-<view class="center-bg">
-
-  <view class="center-item">
-    <image src="{{imgDiscount}}" />
-    <view>
-      加油
-      <text>9.6</text> 折
-    </view>
-  </view>
-
-  <view class="line_gray" />
-
-  <view class="center-item">
-    <image src="{{imgScore}}" />
-    <view>
-      积分
-      <text>2</text>倍
-    </view>
-
   </view>
 </view>
 
@@ -81,7 +85,7 @@
     </swiper-item>
 
     <swiper-item>
-      <view>
+      <scroll-view scroll-y="true">
 
         <view class="info-item">
           <image class='info-icon' src="{{imgNick}}" />
@@ -130,7 +134,7 @@
 
         <view class='edit-bg' hover-class="edit-bg-hover">编辑</view>
 
-      </view>
+      </scroll-view>
     </swiper-item>
 
   </swiper>
