@@ -1,5 +1,6 @@
 {
   "pages": [
+<<<<<<< HEAD
     "pages/login/login",
     "pages/record/detail/record-detail",
     "pages/record/list/record-list",
@@ -10,6 +11,16 @@
     "pages/order/detail/order-detail",
     "pages/logs/logs"
 
+=======
+    "pages/member/list/member_list",
+    "pages/member/detail/member_detail",
+    "pages/order/list/order-list",
+    "pages/order/detail/order-detail",
+    "pages/record/detail/record-detail",
+    "pages/record/list/record-list",
+    "pages/index/index",
+    "pages/logs/logs"
+>>>>>>> f_learning
   ],
   "window": {
     "backgroundTextStyle": "light",

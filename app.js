@@ -1,6 +1,6 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function() {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -33,7 +33,13 @@ App({
       }
     })
   },
+  // 获取图片相对路径
+  getImagePath: function(name) {
+    return this.globalData.localImagePath + name
+  },
   globalData: {
+    // 定义本地图片位置
+    localImagePath: '/assets/images/',
     userInfo: null
   }
 })

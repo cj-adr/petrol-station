@@ -1,37 +1,45 @@
 // pages/member/detail/member_detail.js
+let app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgMember: '../../../assets/images/member_bg.png',
-    imgAvatar: '../../../assets/images/member_avatar.png',
-    imgMemberVip: '../../../assets/images/member_vip.png',
-    imgDiscount: '../../../assets/images/member_discount.png',
-    imgScore: '../../../assets/images/member_score.png',
-    imgSelect: '../../../assets/images/switch_on.png',
-    imgUnSelect: '../../../assets/images/switch_off.png',
+    imgMember: app.getImagePath('member_bg.png'),
+    imgAvatar: app.getImagePath('member_avatar.png'),
+    imgMemberVip: app.getImagePath('member_vip.png'),
+    imgDiscount: app.getImagePath('member_discount.png'),
+    imgScore: app.getImagePath('member_score.png'),
+    imgSelect: app.getImagePath('switch_on.png'),
+    imgUnSelect: app.getImagePath('switch_off.png'),
+    imgNick: app.getImagePath('member_nick.png'),
+    imgSex: app.getImagePath('member_sex.png'),
+    imgBirthday: app.getImagePath('member_birthday.png'),
+    imgLock: app.getImagePath('member_lock.png'),
+    imgLockLevel: app.getImagePath('member_lock_level.png'),
+    imgAsk: app.getImagePath('member_ask.png'),
     current: '0',
     pwdLock: false,
     levelLock: false,
     cardItems: [{
-        'icon': '../../../assets/images/member_qi.png',
+        'icon': app.getImagePath('member_qi.png'),
         'name': '汽油卡',
         'value': '￥40.00'
       },
       {
-        'icon': '../../../assets/images/member_chai.png',
+        'icon': app.getImagePath('member_chai.png'),
         'name': '柴油卡',
         'value': '未领卡'
       },
       {
-        'icon': '../../../assets/images/member_score_less.png',
+        'icon': app.getImagePath('member_score_less.png'),
         'name': '可用积分',
         'value': '400'
       },
       {
-        'icon': '../../../assets/images/member_card.png',
+        'icon': app.getImagePath('member_card.png'),
         'name': '卡包',
         'value': '6张'
       }

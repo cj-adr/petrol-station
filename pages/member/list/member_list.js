@@ -62,17 +62,19 @@ let _items = [{
   }
 ];
 
+let app = getApp();
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imgSearch: '../../../assets/images/common_search.png',
-    imgClear: '../../../assets/images/common_clear.png',
-    imgArrow: '../../../assets/images/common_arrow_right.png',
-    imgAvatar: '../../../assets/images/common_avatar.png',
-    memberDesc: '共100条会员数据',
+    imgSearch: app.getImagePath('common_search.png'),
+    imgClear: app.getImagePath('common_clear.png'),
+    imgArrow: app.getImagePath('common_arrow_right.png'),
+    imgAvatar: app.getImagePath('common_avatar.png'),
+    memberCountDesc: '共100条会员数据',
     searchValue: '',
     refreshing: false,
     nomore: false,
