@@ -1,5 +1,7 @@
 <!--pages/member/list/member_list.wxml-->
 
+<navbar page-name="会员列表" show-nav="{{false}}" />
+
 <view class="input-bg">
   <view class="input-inner">
     <image class="icon-search" src="{{imgSearch}}" />
