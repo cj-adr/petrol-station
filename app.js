@@ -52,10 +52,13 @@ App({
     return this.globalData.localImagePath + name
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   },
   // 获取图片相对路径
   getImagePath: function(name) {
     return this.globalData.localImagePath + name
+=======
+>>>>>>> f_learning
 =======
 >>>>>>> f_learning
 =======
@@ -67,8 +70,11 @@ App({
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     userInfo: null
 =======
+=======
+>>>>>>> f_learning
 =======
 >>>>>>> f_learning
 =======
@@ -79,6 +85,9 @@ App({
     windowHeight:'',
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f_learning
+=======
 >>>>>>> f_learning
 =======
 >>>>>>> f_learning
