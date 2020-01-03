@@ -5,7 +5,11 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    showPassword:true,
+    ischecked:false,
+    textLoginWay:'短信快捷登录',
+    checked:false,
+    imageurl:"../../assets/images/uncheck-box.png",
   },
 
   /**
@@ -62,5 +66,31 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
+  changLoginway:function(){
+    var showPassword=this.data.showPassword
+    this.setData({
+      showPassword:!showPassword,
+      textLoginWay:showPassword?'账号密码登录':'短信快捷登录',
+    })
+  },
+
+  rememberPassword:function(){
+    var checked=this.data.checked
+    var imageurl=this.data.imageurl
+    console.log('=========测试========='+checked)
+    this.setData({
+      checked:!checked,
+      imageurl:checked?"../../assets/images/uncheck-box.png"
+      :"../../assets/images/checked-box.png",
+    }),
+    console.log('=========测试========='+checked)
+  },
+
+  getCode:function(){
+    console.log('获取验证码')
+  },
+  
 })
+
