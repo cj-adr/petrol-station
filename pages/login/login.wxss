@@ -6,7 +6,7 @@
 }
 
 .logo-container{
-  margin-top: 30rpx;
+  margin-top: 180rpx;
 }
 
 
@@ -14,7 +14,7 @@
 .input-container{
   position: absolute;
   left: 30rpx;
-  top: 330rpx;
+  top: 510rpx;
 }
 
 .input-mobile-container{
@@ -116,7 +116,7 @@
 }
 
 .btn-container{
-  top: 640rpx;
+  top: 820rpx;
   position: absolute;
   width: 640rpx;
 }
@@ -134,7 +134,7 @@
 
 .check-container{
   margin-top: 20rpx;
-  top: 760rpx;
+  top: 940rpx;
   position: absolute;
   width: 300rpx;
   display: block;
@@ -157,7 +157,7 @@
 
 .login-way-container{
   margin-top: 15rpx;
-  top: 760rpx;
+  top: 940rpx;
   position: absolute;
   width: 300rpx;
   display: flex;
