@@ -1,50 +1,53 @@
 <!-- 头部tab -->
-<view class="top-tab">
+<view>
+<view class="top">
+  <view class="top-tab">
 
-  <view class="salesman-tab tap-content" bindtap="selectSalesman">
-    <image class="tab-icon" src="../../../assets/images/order_salesman.png"></image>
-    <text class="tab-text">加油员</text>
-    <image class="down" src="../../../assets/images/order_down.png"></image>
-  </view>
-
-  <view class="tab-column-line"></view>
-
-  <view class="pay-type-tab tap-content" bindtap="selectPayMethod">
-    <image class="tab-icon" src="../../../assets/images/order_pay_type.png"></image>
-    <text class="tab-text">支付方式</text>
-    <image class="down" src="../../../assets/images/order_down.png"></image>
-  </view>
-
-  <view class="tab-column-line"></view>
-
-  <view class="date-select-tab tap-content" bindtap="selectDate">
-    <image class="tab-icon" src="../../../assets/images/order_date_select.png"></image>
-    <text class="tab-text">日期筛选</text>
-    <image class="down" src="../../../assets/images/order_down.png"></image>
-  </view>
-
-</view>
-<view class="row-line"></view>
-<!-- 订单item -->
-<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
-<block class="item" wx:for = "{{listData}}" wx:key="index" wx:for-item="item" data-id="{{item.id}}">
-  <view class="item-container" bindtap="clickItem" id="{{id}}">
-    <view class="pay-type-image">
-      <image src="{{item.icon}}"></image>
+    <view class="salesman-tab tap-content" bindtap="selectSalesman">
+      <image class="tab-icon" src="../../../assets/images/order_salesman.png"></image>
+      <text class="tab-text">加油员</text>
+      <image class="down" src="../../../assets/images/order_down.png"></image>
     </view>
 
-    <view class="pay-title-date pay-flex">
-      <text class="pay-title">{{item.title}}</text>
-      <text class="pay-date">{{item.date}}</text>
+    <view class="tab-column-line"></view>
+
+    <view class="pay-type-tab tap-content" bindtap="selectPayMethod">
+      <image class="tab-icon" src="../../../assets/images/order_pay_type.png"></image>
+      <text class="tab-text">支付方式</text>
+      <image class="down" src="../../../assets/images/order_down.png"></image>
     </view>
 
-    <view class="pay-amount-status pay-flex">
-      <text class="pay-amount">{{item.amount}}</text>
-      <text class="pay-status" style="color:{{item.statusColor}}">{{item.status}}</text>
+    <view class="tab-column-line"></view>
+
+    <view class="date-select-tab tap-content" bindtap="selectDate">
+      <image class="tab-icon" src="../../../assets/images/order_date_select.png"></image>
+      <text class="tab-text">日期筛选</text>
+      <image class="down" src="../../../assets/images/order_down.png"></image>
     </view>
+
   </view>
   <view class="row-line"></view>
-</block> 
-</scroll-view>
+</view>
+<!-- 订单item -->
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll">
+  <block class="item" wx:for="{{listData}}" wx:key="index" wx:for-item="item" data-id="{{item.id}}">
+    <view class="item-container" bindtap="clickItem" id="{{id}}">
+      <view class="pay-type-image">
+        <image src="{{item.icon}}"></image>
+      </view>
 
+      <view class="pay-title-date pay-flex">
+        <text class="pay-title">{{item.title}}</text>
+        <text class="pay-date">{{item.date}}</text>
+      </view>
+
+      <view class="pay-amount-status pay-flex">
+        <text class="pay-amount">{{item.amount}}</text>
+        <text class="pay-status" style="color:{{item.statusColor}}">{{item.status}}</text>
+      </view>
+    </view>
+    <view class="row-line"></view>
+  </block>
+</scroll-view>
+</view>
 <!-- <popup visible = "{{visible}}" titleString = "title"></popup> -->
