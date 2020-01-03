@@ -50,21 +50,30 @@ App({
   // 获取图片相对路径
   getImagePath: function(name) {
     return this.globalData.localImagePath + name
+<<<<<<< HEAD
   },
   // 获取图片相对路径
   getImagePath: function(name) {
     return this.globalData.localImagePath + name
+=======
+>>>>>>> f_learning
   },
   globalData: {
     // 定义本地图片位置
     localImagePath: '/assets/images/',
 <<<<<<< HEAD
+<<<<<<< HEAD
     userInfo: null
 =======
+=======
+>>>>>>> f_learning
     userInfo: null,
     navHeight:'',
     natTop:'',
     windowHeight:'',
+<<<<<<< HEAD
+>>>>>>> f_learning
+=======
 >>>>>>> f_learning
   }
 })
