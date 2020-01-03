@@ -8,3 +8,10 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.line{
+  margin: 0 auto;
+  height: 1px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #D8D8D8;
+}

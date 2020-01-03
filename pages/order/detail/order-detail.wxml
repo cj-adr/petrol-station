@@ -1,0 +1,37 @@
+<scroll-view class="detail-container" scroll-y="true">
+  <view class="flex-wrp" wx:for="{{detailData}}" wx:for-item="item">
+    <view class="title-container">
+      <text class="title">{{item.title}}</text>
+    </view>
+    <view class="row-line"></view>
+
+    <view class="detail-item" wx:for="{{item.itemList}}" wx:for-item="item">
+      <text class="left-text">{{item.leftText}}</text>
+      <text class="right-text">{{item.rightText}}</text>
+    </view>
+
+    <view class="gray-gap"></view>
+  </view>
+
+  <!-- 底部bottom -->
+  <view class="bottom">
+    <view class="bottom-print-ticket bottom-tab" bindtap="printTicket">
+      <image class="bottom-tab-icon" src="../../../assets/images/order_detail_print_ticket.png"></image>
+      <text class="print-text">补打小票</text>
+    </view>
+
+    <view class="tab-column-line"></view>
+
+    <view class="bottom-refund bottom-tab" bindtap="refund">
+      <image class="refund-icon" src="../../../assets/images/order_detail_refund.png"></image>
+      <text class="refund-text">退款</text>
+    </view>
+
+    <view class="tab-column-line"></view>
+
+    <view class="bottom-refresh bottom-tab" bindtap="refresh">
+      <image class="refresh-icon" src="../../../assets/images/order_detail_refresh.png"></image>
+      <text class="tab-text">刷新</text>
+    </view>
+  </view>
+</scroll-view>

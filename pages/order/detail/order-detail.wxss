@@ -1,0 +1,98 @@
+/* pages/detail/detail.wxss */
+
+.title-container {
+  display: flex;
+  height: 91rpx;
+  width: 100%;
+  align-items: center;
+  margin-left: 45rpx;
+}
+
+.title {
+  font-size: 27rpx;
+  color: #333;
+  line-height: 33rpx;
+}
+
+.row-line {
+  width: 100%;
+  height: 1rpx;
+  background-color: #ccc;
+  margin-left: 45rpx;
+}
+
+.detail-item {
+  display: flex;
+  width: 100%;
+  height: 70rpx;
+  /* background-color: #888888; */
+  align-items: center;
+  margin-left: 45rpx;
+}
+
+.left-text {
+  width: 135rpx;
+  font-size: 27rpx;
+  color: #bbb;
+  line-height: 33rpx;
+}
+
+.right-text {
+  font-size: 27rpx;
+  color: #333;
+  margin-left: 62rpx;
+  line-height: 33rpx;
+}
+
+.gray-gap {
+  height: 16rpx;
+  width: 100%;
+  background-color: #f4f4f4;
+}
+
+/* 底部bottom */
+.bottom {
+  display: flex;
+  flex-direction: row;
+  height: 91rpx;
+  width: 100%;
+  align-items: center;
+}
+
+.bottom-tab {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.tab-column-line {
+  width: 4rpx;
+  height: 35rpx;
+  background-color: #ccc;
+}
+
+.bottom-tab image {
+  height: 42rpx;
+  width: 42rpx;
+}
+
+.bottom-tab text {
+  font-size: 27rpx;
+  line-height: 33rpx;
+  margin-left: 12rpx;
+}
+
+.bottom-print-ticket text {
+  color: #178bfb;
+}
+
+.bottom-refund text {
+  color: #ff5100;
+}
+
+.bottom-refresh text {
+  color: #178bfb;
+}

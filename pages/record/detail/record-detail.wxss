@@ -1,0 +1,182 @@
+.top {
+  position: fixed;
+  top: 0;
+  bottom: 137rpx;
+}
+
+.scroll{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.divide {
+  background-color: #f4f4f4;
+  height: 2rpx;
+  width: 100%;
+}
+
+.record-time {
+  display: flex;
+  flex-direction: column;
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+  margin-bottom: 31rpx;
+}
+
+.record-time-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 31rpx;
+}
+
+.record-time-left {
+  font-size: 27rpx;
+  color: #808080;
+}
+
+.record-time-right {
+  font-size: 27rpx;
+  color: #333;
+}
+
+.record-sum {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.record-sum-item {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  align-items: center;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.record-sum-item-title {
+  font-size: 27rpx;
+  color: #ccc;
+  margin-top: 8rpx;
+}
+
+.record-sum-item-content {
+  font-size: 33rpx;
+  color: #333;
+  margin-top: 6rpx;
+  margin-bottom: 8rpx;
+}
+
+.record-detail-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24rpx;
+}
+
+.record-detail-title-text {
+  background: #e7f3ff;
+  color: #1890ff;
+  border-radius: 8rpx;
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+  padding-top: 4rpx;
+  padding-bottom: 4rpx;
+  font-size: 27rpx;
+  margin-top: 36rpx;
+}
+
+.record-detail-list-cn {
+  display: flex;
+  flex-direction: row;
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+}
+
+.record-detail-list-cn-left {
+  flex: 1;
+  text-align: left;
+  color: #808080;
+  font-size: 27rpx;
+  padding-top: 6rpx;
+  padding-bottom: 6rpx;
+}
+
+.record-detail-list-cn-mid {
+  flex: 1;
+  text-align: center;
+  color: #808080;
+  font-size: 27rpx;
+  padding-top: 6rpx;
+  padding-bottom: 6rpx;
+}
+
+.record-detail-list-cn-right {
+  flex: 1;
+  text-align: right;
+  color: #808080;
+  font-size: 27rpx;
+  padding-top: 8rpx;
+  padding-bottom: 8rpx;
+}
+
+.record-detail-list {
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.record-detail-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.record-detail-text-left {
+  flex: 1;
+  text-align: left;
+  color: #333;
+  font-size: 27rpx;
+  padding-top: 8rpx;
+  padding-bottom: 8rpx;
+}
+
+.record-detail-text-mid {
+  flex: 1;
+  text-align: center;
+  color: #333;
+  font-size: 27rpx;
+  padding-top: 8rpx;
+  padding-bottom: 8rpx;
+}
+
+.record-detail-text-right {
+  flex: 1;
+  text-align: right;
+  color: #333;
+  font-size: 27rpx;
+  padding-top: 8rpx;
+  padding-bottom: 8rpx;
+}
+.bottom{
+  height: 137rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.submit-btn {
+  margin-left: 32rpx;
+  margin-right: 32rpx;
+  width: auto;
+  height: 83rpx;
+  background-color: #178bfb;
+  color: white;
+  border-radius: 8rpx;
+  text-align: center;
+  font-size: 29rpx;
+  margin-top: 27rpx;
+}
