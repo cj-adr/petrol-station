@@ -1,12 +1,13 @@
 {
   "pages": [
-    "pages/member/list/member_list",
-    "pages/member/detail/member_detail",
-    "pages/order/list/order-list",
-    "pages/order/detail/order-detail",
+    "pages/login/login",
     "pages/record/detail/record-detail",
     "pages/record/list/record-list",
+    "pages/member/list/member_list",
+    "pages/member/detail/member_detail",
     "pages/index/index",
+    "pages/order/list/order-list",
+    "pages/order/detail/order-detail",
     "pages/logs/logs"
   ],
   "window": {
