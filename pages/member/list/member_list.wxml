@@ -23,12 +23,12 @@
       <!--item-->
       <view class="item" hover-class="item-hover" bindtap="onItemClick" data-item="{{item}}">
 
-        <image class="avatar" src="{{imgAvatar}}" />
+        <image class="avatar image-avatar" src="{{imgAvatar}}" />
 
         <view class="content">
-          <text class="name">{{item.name}}</text>
+          <text class="name text-main">{{item.name}}</text>
 
-          <text class="phone">{{item.phone}}</text>
+          <text class="phone text-sub">{{item.phone}}</text>
         </view>
 
         <image class="icon_arrow" src="{{imgArrow}}" />

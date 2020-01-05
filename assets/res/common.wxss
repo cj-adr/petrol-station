@@ -1,0 +1,21 @@
+
+/*textStyle*/
+
+.text-main {
+  color: #333;
+  font-size: 29rpx;
+  line-height: 33rpx;
+}
+
+.text-sub {
+  color: #808080;
+  font-size: 23rpx;
+  line-height: 33rpx;
+}
+
+/*image大小*/
+
+.image-avatar {
+  width: 75rpx;
+  height: 75rpx;
+}

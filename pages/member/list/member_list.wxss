@@ -1,4 +1,5 @@
 /* pages/member/list/member_list.wxss */
+@import "/assets/res/common.wxss";
 
 page {
   width: 100%;
@@ -10,59 +11,62 @@ page {
 .input-bg {
   background-color: #fff;
   position: relative;
-  height: 60px;
+  height: 125rpx;
   z-index: 2;
 }
 
 .input-inner {
-  margin: 8px;
-  height: 44px;
-  border-radius: 4px;
+  margin: 17rpx;
+  height: 91rpx;
+  border-radius: 8rpx;
   background-color: #f4f4f4;
   display: flex;
+  align-items: center;
 }
 
 .icon-search {
-  width: 20px;
-  height: 20px;
-  margin-left: 19px;
-  margin-top: 12px;
-  display: inline-flex;
-}
-
-.icon-clear {
-  width: 28px;
-  height: 28px;
-  margin-right: 19px;
-  margin-top: 8px;
-  display: inline-flex;
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 40rpx;
 }
 
 .input-search {
-  margin-left: 12px;
-  height: 44px;
-  color: #333;
-  font-size: 16px;
   flex: 1;
+  font-size: 33rpx;
+  line-height: 33rpx;
+  color: #333;
+  margin-left: 25rpx;
+}
+
+.icon-clear {
+  width: 56rpx;
+  height: 56rpx;
+  padding: 8rpx;
+  margin-right: 29rpx;
+  display: inline-flex;
 }
 
 .total-bg {
-  height: 30px;
+  height: 63rpx;
   background-color: #e7f3ff;
   text-align: center;
-  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
   z-index: 2;
 }
 
 .total-bg >text {
   color: #1890ff;
-  font-size: 13px;
+  font-size: 27rpx;
+  line-height: 38rpx;
 }
 
 .content-bg {
   background-color: #f4f4f4;
   flex: 1;
-  height: 100px;
+  height: 100rpx;
 }
 
 .content-bg pulltorefresh-view {
@@ -72,9 +76,9 @@ page {
 
 .item {
   display: flex;
-  height: 36px;
-  padding: 12px 20px 12px 20px;
-  margin-bottom: 1px;
+  height: 75rpx;
+  padding: 25rpx 40rpx 25rpx 42rpx;
+  margin-bottom: 2rpx;
   background-color: #fff;
 }
 
@@ -83,30 +87,25 @@ page {
 }
 
 .avatar {
-  width: 36px;
-  height: 36px;
   display: inline-flex;
 }
 
 .content {
   flex: 1;
-  margin-left: 14px;
+  margin-left: 30rpx;
 }
 
 .name {
-  color: #333;
-  font-size: 14px;
   display: block;
 }
 
 .phone {
-  color: #808080;
-  font-size: 11px;
+  margin-top: 10rpx;
 }
 
 .icon_arrow {
-  width: 7px;
-  height: 12px;
-  margin-top: 12px;
+  width: 15rpx;
+  height: 25rpx;
+  margin-top: 25rpx;
   display: inline-flex;
 }
