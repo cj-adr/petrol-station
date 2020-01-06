@@ -1,5 +1,4 @@
 <!-- 头部tab -->
-<view>
 <view class="top">
   <view class="top-tab">
 
@@ -49,5 +48,4 @@
     <view class="row-line"></view>
   </block>
 </scroll-view>
-</view>
 <!-- <popup visible = "{{visible}}" titleString = "title"></popup> -->

@@ -4,6 +4,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+   z-index: 9999;
 }
 
 .top-tab {
@@ -54,16 +55,12 @@
 }
 
 /* item */
-
 .container {
   width: 100%;
   height: 100%;
-  align-items: flex-start;
   padding: 0rpx;
-  position: fixed;
-  top: 84rpx;
-  bottom: 0;
-overflow: auto;
+  position:fixed;
+  padding-top: 83rpx;
 }
 
 .item-container {
