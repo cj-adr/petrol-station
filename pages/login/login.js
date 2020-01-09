@@ -18,18 +18,6 @@ Page({
     resultData:undefined,
   },
 
-  login: function () {
-    let parms = {
-      orderNumber: "85144799012191604736",
-      refresh: false,
-    }
-    services.fetchOrderDetail(parms).then(succ => {
-      console.log(succ)
-    }).catch(e => {
-      console.log(e)
-    })
-  },
-
 
 
   /**
@@ -118,6 +106,16 @@ Page({
     console.log('获取验证码')
   },
 
+  login:function(){
+    router.navigationTo({
+      name:'router_test',
+      data:{
+        isBoolean:false,
+        isNumber:6,
+        isString:'test?'
+      }
+    })
+  },
 
   inputMobile:function(e){
     var inputValue=this.data.inputValue;
