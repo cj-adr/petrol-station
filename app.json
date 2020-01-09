@@ -1,27 +1,16 @@
 {
   "pages": [
-<<<<<<< HEAD
     "pages/login/login",
-=======
     "pages/order/list/order-list",
     "pages/order/detail/order-detail",
     "pages/record/detail/record-detail",
->>>>>>> f_sy_ui
     "pages/record/list/record-list",
-    "pages/record/detail/record-detail",
     "pages/member/list/member_list",
     "pages/member/detail/member_detail",
     "pages/index/index",
-<<<<<<< HEAD
-    "pages/order/list/order-list",
-    "pages/order/detail/order-detail",
-    "pages/logs/logs",
     "pages/router-test/router-test",
-    "pages/router-test/router-test-detail"
-=======
+    "pages/router-test/router-test-detail",
     "pages/logs/logs"
-    
->>>>>>> f_sy_ui
   ],
   "window": {
     "backgroundTextStyle": "light",
