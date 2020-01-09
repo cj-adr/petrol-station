@@ -1,5 +1,12 @@
 /* 头部tab */
 
+.top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+   z-index: 9999;
+}
+
 .top-tab {
   display: flex;
   flex-direction: row;
@@ -51,8 +58,9 @@
 .container {
   width: 100%;
   height: 100%;
-  align-items: flex-start;
   padding: 0rpx;
+  position:fixed;
+  padding-top: 83rpx;
 }
 
 .item-container {

@@ -1,5 +1,13 @@
 /* pages/detail/detail.wxss */
 
+.top {
+  position: fixed;
+  bottom: 91rpx;
+  top: 0;
+  width: 100%;
+  /* overflow:auto; */
+}
+
 .title-container {
   display: flex;
   height: 91rpx;
@@ -51,12 +59,15 @@
 }
 
 /* 底部bottom */
+
 .bottom {
   display: flex;
   flex-direction: row;
   height: 91rpx;
   width: 100%;
   align-items: center;
+  position: fixed;
+  bottom: 0; 
 }
 
 .bottom-tab {

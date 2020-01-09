@@ -1,18 +1,22 @@
-<scroll-view class="detail-container" scroll-y="true">
-  <view class="flex-wrp" wx:for="{{detailData}}" wx:for-item="item">
-    <view class="title-container">
-      <text class="title">{{item.title}}</text>
-    </view>
-    <view class="row-line"></view>
+<view>
+  <!-- <view class="top"> -->
+    <scroll-view class="detail-container top" scroll-y="true">
 
-    <view class="detail-item" wx:for="{{item.itemList}}" wx:for-item="item">
-      <text class="left-text">{{item.leftText}}</text>
-      <text class="right-text">{{item.rightText}}</text>
-    </view>
+      <view class="flex-wrp" wx:for="{{detailData}}" wx:for-item="item">
+        <view class="title-container">
+          <text class="title">{{item.title}}</text>
+        </view>
+        <view class="row-line"></view>
 
-    <view class="gray-gap"></view>
-  </view>
+        <view class="detail-item" wx:for="{{item.itemList}}" wx:for-item="item">
+          <text class="left-text">{{item.leftText}}</text>
+          <text class="right-text">{{item.rightText}}</text>
+        </view>
 
+        <view class="gray-gap"></view>
+      </view>
+    </scroll-view>
+  <!-- </view> -->
   <!-- 底部bottom -->
   <view class="bottom">
     <view class="bottom-print-ticket bottom-tab" bindtap="printTicket">
@@ -34,4 +38,6 @@
       <text class="tab-text">刷新</text>
     </view>
   </view>
-</scroll-view>
+
+</view>
+<!-- </scroll-view> -->
