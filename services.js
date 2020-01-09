@@ -5,5 +5,5 @@ export const login = params => {
 };
 
 export const fetchOrderDetail = params => {
-  return http.post('product-order/get-order-detail', params);
+  return http.get('product-order/get-order-detail', params);
 };

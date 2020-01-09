@@ -99,13 +99,13 @@ const requestWithoutFetchToken = (url, method, params, contentType = ContentType
 }
 
 
-const fetchTokenAndRequest = async(url, method, params, contentType = ContentType.RequestBody) => {
+const fetchTokenAndRequest = async (url, method, params, contentType = ContentType.RequestBody) => {
   let loginParms = {
     mobile: "15158081188",
     pwd: "111111",
     loginType: "MOBILE_PWD"
   }
-  let loginResponse = await requestWithoutFetchToken(BaseURL + "user/login", "POST", loginParms)
+  let loginResponse = await requestWithoutFetchToken("user/login", "POST", loginParms)
   wx.setStorageSync("token", loginResponse.token)
   return await requestWithoutFetchToken(url, method, params, contentType)
 }

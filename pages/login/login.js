@@ -17,13 +17,11 @@ Page({
 
 
   login: function() {
-    var parms = {
-      mobile: "15158081188",
-      pwd: "111111",
-      loginType: "MOBILE_PWD"
+    let parms = {
+      orderNumber: "85144799012191604736",
+      refresh: false,
     }
-
-    services.login(parms).then(succ => {
+    services.fetchOrderDetail(parms).then(succ => {
       console.log(succ)
     }).catch(e => {
       console.log(e)
