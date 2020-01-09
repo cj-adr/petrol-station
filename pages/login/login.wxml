@@ -28,7 +28,7 @@
 		<view class="line" style="margin-top:20rpx"></view>
 	</view>
 
-	<view class="btn-container">
+	<view class="btn-container" bindtap="login">
 		<button size="">确认登录</button>
 	</view>
 

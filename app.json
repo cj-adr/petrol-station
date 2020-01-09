@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/login/login",
-    "pages/record/detail/record-detail",
     "pages/record/list/record-list",
+    "pages/record/detail/record-detail",
     "pages/member/list/member_list",
     "pages/member/detail/member_detail",
     "pages/index/index",
