@@ -1,0 +1,12 @@
+<view class="wx-popup" hidden="{{!visible}}" catchtap="_outClick">
+  <view class="popup-container" style="top:{{offsetY}}rpx;left:{{offsetX}}rpx;">
+    <view class="item-container" wx:for="{{popupList}}" wx:for-item="item" wx:key="index">
+
+      <view class="item item-container" catchtap="_onItemClick" data-item="{{item}}">
+        <text class="item-text">{{item.text}}</text>
+         <view class="row-line"></view>
+      </view>
+
+    </view>
+  </view>
+</view>

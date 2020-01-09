@@ -102,10 +102,57 @@ Page({
         status: "部分退款",
         statusColor: "#FF5100"
       },
-
     ],
 
-    visible: true
+    visible: true,
+    salesmanText: '加油员',
+    payTypeText: "支付方式",
+    salesmanList: [{
+        id: 1,
+        text: '所有'
+      },
+      {
+        id: 2,
+        text: '加油员A'
+      },
+      {
+        id: 3,
+        text: '加油员B'
+      },
+      {
+        id: 4,
+        text: '加油员C'
+      },
+    ],
+    payTypeList: [{
+        id: 1,
+        text: "所有"
+      },
+      {
+        id: 2,
+        text: "支付宝支付"
+      },
+      {
+        id: 3,
+        text: "微信支付"
+      },
+      {
+        id: 4,
+        text: "汽油卡支付"
+      },
+      {
+        id: 5,
+        text: "柴油卡支付"
+      },
+      {
+        id: 6,
+        text: "刷卡支付"
+      },
+      {
+        id: 7,
+        text: "现金支付"
+      },
+    ]
   },
 
   /**
@@ -117,26 +164,33 @@ Page({
     })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function() {
-
+    this.salesPopup = this.selectComponent("#salesPopup");
+    this.payTypePopup = this.selectComponent("#payTypePopup")
   },
 
   selectSalesman: function() {
-    console.log("选择加油员");
+    var salesmanList = this.data.salesmanList
+    this.salesPopup.showPopup(salesmanList)
+  },
+
+  _onSalesmanItemClick: function(e) {
+    var text = e.detail.text
+    this.setData({
+      salesmanText: text
+    })
   },
 
   selectPayMethod: function() {
-    console.log("选择支付方式");
+    var list = this.data.payTypeList
+    this.payTypePopup.showPopup(list)
+  },
+
+  _onPayTypeItemClick: function(e) {
+    var text = e.detail.text
+    this.setData({
+      payTypeText: text
+    })
   },
 
   selectDate: function() {
@@ -147,54 +201,21 @@ Page({
     var id = e.currentTarget.dataset.id
     console.log("item_id =" + id);
     wx.navigateTo({
-      url: '../detail/detail',
+      url: '../detail/order-detail',
     })
   },
 
   upper: function() {
-    console.log("upper");
+    
   },
 
   lower: function() {
-    console.log("lower")
+    
   },
 
   scroll: function() {
-    console.log("scroll");
+    
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function() {
 
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function() {
-    console.log("onReachBottom");
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function() {
-
-  }
 })
