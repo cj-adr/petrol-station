@@ -1,0 +1,15 @@
+<!--pages/router-test/router-test.wxml-->
+<view class="text-container">
+<text class="text-test" bindtap="navigationTo" >路由测试页面</text>
+
+
+<button class="margin-top" bindtap="switchBar">switch-bar</button>
+<button class="margin-top" bindtap="navigationTo">navigationTo</button>
+<button class="margin-top" bindtap="reLaunch">reLaunch</button>
+<button class="margin-top" bindtap="eventChannel">eventChannel</button>
+
+
+<checkbox class="checkbox margin-top">选择</checkbox>
+
+</view>
+

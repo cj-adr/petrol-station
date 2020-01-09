@@ -6,7 +6,7 @@
 	<view class="input-container">
 		<view class="input-mobile-container">
 			<image src="../../assets/images/login_phone.png" style="width:50rpx;height:50rpx"></image>
-			<input type="text" placeholder="请输入手机号"></input>
+			<input  type="text" placeholder="请输入手机号" bindinput="inputMobile" value="{{name}}"></input>
 		</view>
 		<view class="line" style="margin-top:20rpx"></view>
 

@@ -1,22 +1,24 @@
 // pages/login/login.js
 const services = require('../../services.js')
 
+const router= require('../../router/index')
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    showPassword: true,
-    ischecked: false,
-    textLoginWay: '短信快捷登录',
-    checked: false,
-    imageurl: "../../assets/images/uncheck-box.png",
+    showPassword:true,
+    ischecked:false,
+    textLoginWay:'短信快捷登录',
+    checked:false,
+    imageurl:"../../assets/images/uncheck-box.png",
+    inputValue:'',
+    resultData:undefined,
   },
 
-
-
-  login: function() {
+  login: function () {
     let parms = {
       orderNumber: "85144799012191604736",
       refresh: false,
@@ -33,7 +35,17 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {},
+  onLoad: function (options) {
+    
+    if(options.data != undefined){
+      var json=router.extract(options);
+      var token=json.token;
+      console.log("============="+token);
+    }
+      
+    
+    
+  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -45,8 +57,7 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
-
+  onShow: function () {
   },
 
   /**
@@ -92,15 +103,15 @@ Page({
     })
   },
 
-  rememberPassword: function() {
-    var checked = this.data.checked
-    var imageurl = this.data.imageurl
-    console.log('=========测试=========' + checked)
+
+  rememberPassword:function(){
+    var checked=this.data.checked
+    var imageurl=this.data.imageurl
     this.setData({
-        checked: !checked,
-        imageurl: checked ? "../../assets/images/uncheck-box.png" : "../../assets/images/checked-box.png",
-      }),
-      console.log('=========测试=========' + checked)
+      checked:!checked,
+      imageurl:checked?"../../assets/images/uncheck-box.png"
+      :"../../assets/images/checked-box.png",
+    })
   },
 
   getCode: function() {
@@ -108,4 +119,12 @@ Page({
   },
 
 
+  inputMobile:function(e){
+    var inputValue=this.data.inputValue;
+    this.setData({
+      inputValue: e.detail.value,
+    })
+    console.log('======='+inputValue)
+  }
+  
 })

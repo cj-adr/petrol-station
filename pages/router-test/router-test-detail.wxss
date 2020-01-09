@@ -1,0 +1,9 @@
+/* pages/router-test/router-test-detail.wxss */
+.detail-box{
+  display: flex;
+  flex-direction: column;
+  margin-top: 180rpx;
+  justify-content: center;
+  text-align: center;
+}
+

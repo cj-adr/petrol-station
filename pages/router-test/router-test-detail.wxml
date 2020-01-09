@@ -1,0 +1,9 @@
+<!--pages/router-test/router-test-detail.wxml-->
+<view class="detail-box">
+<text bindtap="back" >详情返回2级</text>
+<text bindtap="backOne" style="margin-top:60rpx">详情返回1级</text>
+
+<text bindtap="eventChannelBack" style="margin-top:60rpx">eventChannel返回数</text>
+
+</view>
+

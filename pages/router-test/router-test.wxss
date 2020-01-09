@@ -1,0 +1,60 @@
+/* pages/router-test/router-test.wxss */
+
+.text-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 180rpx;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-test{
+  font-size: 60rpx;
+  color: red;
+}
+
+.margin-top{
+  margin-top: 60rpx;
+}
+
+
+
+
+.checkbox .wx-checkbox-input {
+  border-radius: 5rpx; /* 圆角 */
+  width: 32rpx; /* 背景的宽 */
+  height: 32rpx; /* 背景的高 */
+  border: 2px solid rgb(92, 108, 255);
+}
+
+.checkbox .wx-checkbox-input-disabled {
+  border-radius: 5rpx; /* 圆角 */
+  width: 32rpx; /* 背景的宽 */
+  height: 32rpx; /* 背景的高 */
+  background: #f3f3f3;
+  border: 1px solid rgba(201, 201, 201, 1);
+}
+
+.checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: rgba(92, 108, 255);
+}
+
+.checkbox  .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 32rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+
+
+
+
